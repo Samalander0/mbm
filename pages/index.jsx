@@ -13,7 +13,7 @@ export default function Home() {
       <section id={styles.info}>
         <div>
           <h2>Coming Soon To A Website Near You</h2>
-          <p>Beyond Blocks will be the only Minecraft Building course you'll need to become a master builder. Put together by some of the top Minecraft Creators, Beyond Blocks is perfect for you!</p>
+          <p>Beyond Blocks will be the only Minecraft Building course you&apos;ll need to become a master builder. Put together by some of the top Minecraft Creators, Beyond Blocks is perfect for you!</p>
           <Link href="join"><button className="btn-primary green" disabled>Create an account & try the course for free!</button></Link>
         </div>
         <div id={styles.featuring}>
