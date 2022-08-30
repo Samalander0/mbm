@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="181" height="112" viewBox="0 0 181 112">
+  <defs>
+    <clipPath id="clip-logoSmall">
+      <rect width="181" height="112"/>
+    </clipPath>
+  </defs>
+  <g id="logoSmall" clip-path="url(#clip-logoSmall)">
+    <text id="Beyond_Blocks" data-name="Beyond
+Blocks" transform="translate(91 43)" fill="#3b8526" font-size="48" font-family="AcierBATText-Solid, Acier BAT Text Solid"><tspan x="-85.296" y="0">Beyond</tspan><tspan x="-81.216" y="40">Blocks</tspan></text>
+    <text id="by_MustBeMinecraft" data-name="by MustBeMinecraft" transform="translate(9 103)" fill="#875627" font-size="17" font-family="AcierBATText-Solid, Acier BAT Text Solid" letter-spacing="0.03em"><tspan x="0" y="0">by MustBeMinecraft</tspan></text>
+  </g>
+</svg>

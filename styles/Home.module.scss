@@ -1,0 +1,122 @@
+//Home Styles
+
+$green: #3B8526;
+$brown: #875627;
+
+@mixin flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#header {
+  @include flex-center;
+  height: 100vh;
+  padding: 0 50vw 0 7vw;
+  position: relative;
+
+  &:before {
+    content: "";
+    width: 100vw;
+    height: 55vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(/media/minecraft.jpg);
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 0, 100% 0, 100% 40%, 0% 100%);
+    filter: blur(10px) brightness(1.7);
+  }
+  * {
+    z-index: 2;
+  }
+
+  h1 {
+    color: $green;
+    font-size: 5rem;
+  }
+  h2 {
+    color: $brown;
+    font-weight: 400;
+    margin: 0;
+    padding-right: 7vw;
+  }
+  button {
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+  img {
+    position: absolute;
+    right: 7vw;
+    transform: rotate(5deg);
+    border-radius: 2rem;  
+    width: 32vw;
+    box-shadow: 0px 3px 30px 0px rgba(0, 0, 0, 0.06);
+
+    &:hover {
+      width: 33vw;
+      right: 6.5vw;
+    }
+  }
+}
+
+#main {
+  padding: 1rem 7vw 6rem 7vw;
+
+  #info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h2 {
+      font-size: 3.5rem;
+      max-width: 40rem;
+    }
+    p {
+      margin: 1rem 0 1.2rem 0;
+      max-width: 50ch;
+    }
+    button {
+      font-size: 0.9rem;
+    }
+
+    #featuring {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 2rem;
+      padding-right: 5rem;
+      position: relative;
+      
+      h3 {
+        font-size: 3rem;
+        position: absolute;
+        right: -7rem;
+        transform: rotate(90deg);
+      }
+      div {
+        @include flex-center;
+        align-items: center;
+        gap: 0.5rem;
+        
+        h4 {
+          font-family: neue-haas-grotesk-display, sans-serif;
+        }
+        
+        img {
+          border-radius: 100%;
+          width: 7rem;
+        }
+
+        &:nth-of-type(even) {
+          margin-right: 6rem;
+        }
+        &:nth-of-type(odd) {
+          margin-left: 6rem;
+        }
+      }
+    }
+  }
+}

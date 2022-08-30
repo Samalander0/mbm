@@ -1,0 +1,199 @@
+//Global Styles
+
+$green: #3B8526;
+$brown: #875627;
+
+@import url("https://use.typekit.net/sos1kcj.css"); //Acier BAT 
+@import url("https://use.typekit.net/naa8btm.css"); //Neue Haas
+@font-face {
+  font-family: "Minecraft-Ten";
+  src: url("/MinecraftTen.ttf") format("truetype");
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: neue-haas-grotesk-display, sans-serif;
+}
+* {
+  transition: 0.25s ease-in-out;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: calc(100vw - 5rem);
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  background: rgba(255,255,255,0.55);
+  backdrop-filter: blur(2px);
+  padding: 1rem 2rem;
+
+  border-radius: 0 0 1rem 1rem;
+
+  div {
+    display: flex;
+    gap: 1rem;
+    border-radius: 5px 0 5px 0;
+  }
+  button {
+    font-size: 1rem;
+  }
+}
+footer {
+  position: relative;
+  padding: 1rem 7vw;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  color: white;
+  
+  &:before {
+    content: "";
+    width: 110%;
+    height: 110%;
+    position: absolute;
+    top: 0;
+    left: -5%;
+    background-image: url(/media/minecraft.jpg);
+    background-size: cover;
+    background-position: bottom;
+    filter: blur(5px) brightness(1.3);
+  }
+  * {
+    z-index: 2;
+  }
+  
+  a {
+    color: inherit;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  h3 {
+    color: inherit;
+  }
+}
+
+button {
+  border-radius: 99rem;
+  padding: 0.3rem 1.5rem;
+  width: fit-content;
+  font-family: inherit;
+
+  &:not(:disabled):hover {
+    cursor: pointer;
+  }
+  &:disabled:hover {
+    cursor: not-allowed;
+  }
+}
+.btn {
+  text-decoration: none;
+  background: transparent;
+  border: none;
+
+  &.green {
+    color: $green;
+    &:hover {
+      background: $green;
+      color: white;
+    }
+  }
+  &.brown {
+    color: $brown;
+    &:hover {
+      background: $brown;
+      color: white;
+    }
+  }
+}
+.btn-normal {
+  text-decoration: none;
+  background: transparent;
+  border: 1px solid;
+
+  &.green {
+    color: $green;
+    border-color: $green;
+    &:hover {
+      background: $green;
+      color: white;
+    }
+  }
+  &.brown {
+    color: $brown;
+    border-color: $brown;
+    &:hover {
+      background: $brown;
+      color: white;
+    }
+  }
+}
+.btn-primary {
+  text-decoration: none;
+  background: transparent;
+  border: 1px solid;
+
+  &.green {
+    color: white;
+    border-color: $green;
+    background: $green;
+    &:hover {
+      background: transparent;
+      color: $green;
+    }
+  }
+  &.brown {
+    color: white;
+    border-color: $brown;
+    background: $brown;
+    &:hover {
+      background: transparent;
+      color: $brown;
+    }
+  }
+}
+
+.green {
+  color: $green;
+}
+.brown {
+  color: $brown;
+}
+
+h1 {
+  font-family: acier-bat-solid, sans-serif;
+  font-size: 4rem;
+  margin: 0;
+}
+h1,h2,h3,h4,h5 {
+  color: $green;
+}
+main {
+  color: $brown;
+  
+  h1,h2,h3,h4,h5 {
+    font-family: Minecraft-Ten, sans-serif;
+    margin: 0;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  p {
+    font-size: 1.3rem;
+    max-width: 60ch;
+  }
+}
+
+::selection {
+  background: $green;
+  color: white;
+}
